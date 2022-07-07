@@ -1,0 +1,27 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  min-width: 800px;
+  min-height: 600px;
+  justify-content: flex-start;
+  align-items: center;
+  color: #1f1f22;
+  background-color: rgb(27, 85, 85);
+}
+
+.login-card {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+}
