@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import CheckLogin from "../../Components/CheckLogin/CheckLogin";
-import { checkIsLoggedIn, setLoggedIn } from "../../Helpers/Global";
+import { setLoggedIn } from "../../Helpers/Global";
 import "./Login.scss";
 
 export default function Login() {
@@ -28,12 +28,12 @@ export default function Login() {
           <label>Password</label>
           <input type="password" placeholder="Password" />
           <br />
-          <div
+          <button
             className="btn btn-success btn-sm mx-auto w-75"
             onClick={onLogin}
           >
             Login
-          </div>
+          </button>
         </div>
         <br />
         <h6 className="info-white">Hospitech India Pvt. Ltd.</h6>

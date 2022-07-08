@@ -1,0 +1,31 @@
+.opdentry-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.opdentry-form {
+  display: flex;
+  position: relative;
+  padding: 15px;
+  height: 60%;
+  max-height: 60%;
+  min-height: 350px;
+  background-color: rgb(232, 237, 241);
+  border-bottom: 1px solid #fff;
+  border-top: 2px solid #FFF;
+}
+
+.opdentry-datagrid {
+  display: flex;
+  position: relative;
+  height: 40%;
+  max-height: 40%;
+  min-height: 250px;
+  border-top: 2px solid #ddd;
+  padding: 15px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

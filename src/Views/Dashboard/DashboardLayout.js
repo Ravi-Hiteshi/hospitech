@@ -1,26 +1,18 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { setLogout } from "../../Helpers/Global";
+import { Outlet } from "react-router-dom";
+import PageHeader from "../../Components/PageHeader/PageHeader";
+import Sidebar from "../../Components/Sidebar/Sidebar";
 import "./Dashboard.scss";
 
 export default function DashboardLayout() {
-  const navigate = useNavigate();
-
-  function onLogout() {
-    setLogout();
-    navigate("/");
-  }
-
   return (
     <div className="dashboard-layout">
-      <div className="sidebar-container"></div>
+      <div className="sidebar-container">
+        <Sidebar />
+      </div>
       <div className="page-body">
-        <div className="page-header">
-          <h5 className="text-light">Dashboard</h5>
-          <button className="btn btn-light btn-sm ps-3 pe-3" onClick={onLogout}>
-            Logout
-          </button>
-        </div>
+        <PageHeader />
+        <Outlet />
       </div>
     </div>
   );

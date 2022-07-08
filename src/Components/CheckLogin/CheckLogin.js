@@ -1,12 +1,17 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function CheckLogin(props) {
   const navigate = useNavigate();
+  const location = useLocation();
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      navigate("/dashboard");
+      if (location.pathname !== "/") {
+        navigate(location.pathname);
+      } else {
+        navigate("/dashboard");
+      }
     } else {
       navigate("/");
     }
