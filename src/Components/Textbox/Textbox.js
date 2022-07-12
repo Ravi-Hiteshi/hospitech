@@ -2,7 +2,7 @@ import React from "react";
 import "./Textbox.scss";
 
 export default function Textbox({
-  label = "label",
+  label = "",
   value = "",
   placeholder = "",
   onChange = () => {},

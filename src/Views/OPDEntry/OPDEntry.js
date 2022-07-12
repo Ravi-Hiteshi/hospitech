@@ -1,4 +1,5 @@
 import React from "react";
+import OPDDataGrid from "./OPDDataGrid";
 import "./OPDEntry.scss";
 import OPDEntryForm from "./OPDEntryForm";
 
@@ -8,7 +9,9 @@ export default function OPDEntry() {
       <div className="opdentry-form">
         <OPDEntryForm />
       </div>
-      <div className="opdentry-datagrid">Today's OPD List</div>
+      <div className="opdentry-datagrid">
+        <OPDDataGrid />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import Divider from "../Divider/Divider";
 import navigationData from "./NavigationData";
 import "./Sidebar.scss";
 

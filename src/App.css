@@ -91,6 +91,7 @@ label {
 .btn-outline-success:focus {
   background-color: #00515f;
   border-color: #00515f;
+  color: #fff;
 }
 
 .btn-primary {
