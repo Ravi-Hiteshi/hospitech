@@ -14,7 +14,7 @@ export default function Sidebar() {
           location.pathname === item.path && "nav-active"
         }`}
       >
-        <Link to={item.path}>{item.title}</Link>{" "}
+        <Link to={item.path}>{item.icon} {item.title}</Link>{" "}
       </li>
     );
   }

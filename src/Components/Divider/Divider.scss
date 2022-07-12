@@ -1,0 +1,18 @@
+.divider-com {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(8, 32, 32, 0.15);
+  margin-bottom: 10px;
+  margin-top: 5px;
+
+  .divider-inner {
+    display: flex;
+    flex: 1;
+    padding: 0px 0px;
+    font-size: 13px;
+    font-weight: 500;
+    border-bottom: 2px solid #ffffff50;
+    color: rgb(27, 85, 85);
+  }
+}

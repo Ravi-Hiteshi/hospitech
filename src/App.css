@@ -56,14 +56,16 @@ input[type="text"]:focus,
 input[type="password"]:hover,
 input[type="password"]:focus {
   outline: none;
-  border-color: rgb(108, 185, 182);
-  box-shadow: 0px 0px 5px rgba(71, 195, 204, 0.5);
+  /* border-color: rgb(108, 185, 182);
+  box-shadow: 0px 0px 5px rgba(71, 195, 204, 0.5); */
 }
 
 label {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   width: 90%;
+  max-height: 18px;
   font-size: 13px;
   color: rgb(63, 63, 63);
   padding-left: 2px;
@@ -71,8 +73,45 @@ label {
 
 .btn-success {
   background-color: #008080;
+  border-color: #008080;
 }
 
-.btn-success:hover, .btn-success:focus{
-  background-color: #005f5f;
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #00515f;
+  border-color: #00515f;
+}
+
+.btn-outline-success {
+  border-color: #008080;
+  color: #00515f;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+  background-color: #00515f;
+  border-color: #00515f;
+}
+
+.btn-primary {
+  background-color: #306275;
+  border-color: #39697c;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #164152;
+  border-color: #164152;
+}
+
+.btn-sx {
+  height: 25px !important;
+  max-height: 25px !important;
+  padding: 0px 10px;
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+.btn-sx:focus {
+ outline: none;
 }
